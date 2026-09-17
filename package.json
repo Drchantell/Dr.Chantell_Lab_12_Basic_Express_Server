@@ -1,7 +1,7 @@
 {
-  "name": "lab-1-basic-express-server",
+  "name": "lab-12-basic-express-server",
   "version": "1.0.0",
-  "description": "Per Scholas Lab 1 - Build a Basic Express.js Server for The Daily Grind.",
+  "description": "My Lab 12 project for building a basic Express.js server for The Daily Grind.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
