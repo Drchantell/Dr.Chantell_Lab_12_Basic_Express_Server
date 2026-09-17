@@ -1,13 +1,21 @@
-# Lab 1 Reflection Questions
+# Lab 12 Reflection
 
-## 1. What is the difference between res.send() and res.sendFile()? When would you use one over the other?
+## 1. What is the difference between res.send() and res.sendFile()?
 
-res.send() sends content directly in the response. I could use it to send simple text, HTML written directly in my server file, or other small responses. res.sendFile() sends an actual file from my computer or project folder. In this lab, I used res.sendFile() because the assignment required me to serve separate HTML files.
+I learned that `res.send()` sends content directly from the server. I could use it for a short message, a small piece of HTML, or another simple response. The `res.sendFile()` method sends a complete file from my project. I used `res.sendFile()` in this lab because I needed to serve separate HTML pages.
 
-## 2. Why is the path module necessary when serving files? What could go wrong if you just used a relative path like public/index.html?
+## 2. Why is the path module helpful when serving files?
 
-The path module helps create a complete and reliable file path. Using path.join() with __dirname tells Node.js exactly where the file is located. If I only used a relative path like public/index.html, the server might not find the file if the application is started from a different working directory.
+The `path` module helps my server build the complete location of a file. I used `path.join()` with `__dirname` so Node.js can find the files inside my `public` folder. A simple relative path might not work correctly if I start the application from a different folder.
 
-## 3. How would you add a third page, such as a menu page, to this server?
+## 3. How would I add another page?
 
-I would first create a new menu.html file inside the public folder. Then I would add a new GET route in server.js for /menu. Inside that route, I would use res.sendFile() and path.join() to send the menu.html file. Finally, I would restart the server and test http://localhost:3000/menu in the browser.
+To add a menu page, I would create a file named `menu.html` inside the `public` folder. Then I would add a GET route for `/menu` in `server.js`. I would use `res.sendFile()` and `path.join()` to serve the new file. Finally, I would restart the server and test <http://localhost:3000/menu> in my browser.
+
+## My Biggest Challenge
+
+My biggest challenge was understanding how the route in `server.js` connects to an HTML file. Working through this lab helped me understand that Express listens for a request, finds the route that matches the request, and sends the correct file back to the browser.
+
+## What I Accomplished
+
+I successfully created a working Express server with a home page and a contact page. I also practiced installing dependencies, starting a server, testing routes, and organizing files in a simple project structure.
