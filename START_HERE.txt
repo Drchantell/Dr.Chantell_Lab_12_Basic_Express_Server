@@ -1,0 +1,35 @@
+START HERE
+
+This is Lab 1: Build a Basic Express.js Server.
+
+1. Open the Lab_1_Basic_Express_Server folder in VS Code.
+
+2. Open the terminal in VS Code.
+
+3. Run:
+
+npm install
+
+4. After the install finishes, run:
+
+node server.js
+
+5. You should see:
+
+Server is running on port 3000
+
+6. Open this page in your browser:
+
+http://localhost:3000/
+
+7. Test the contact page:
+
+http://localhost:3000/contact
+
+8. To stop the server, go back to the terminal and press:
+
+Control + C
+
+You can also start the server with:
+
+npm start

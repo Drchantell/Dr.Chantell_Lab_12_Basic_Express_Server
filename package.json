@@ -1,0 +1,14 @@
+{
+  "name": "lab-1-basic-express-server",
+  "version": "1.0.0",
+  "description": "Per Scholas Lab 1 - Build a Basic Express.js Server for The Daily Grind.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Dr. Chantell McDowell",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
